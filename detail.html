@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プラン詳細 - とりかみAIラボ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .detail-content {
+            padding: 50px 0;
+            text-align: center;
+            background: #1a1a3a;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+            margin-top: 50px;
+        }
+        .detail-content h2 {
+            color: #00ffff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .detail-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #00ffff;
+            color: #0a0a1a;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px #00ffff;
+        }
+        .back-btn:hover {
+            background: #00e0e0;
+            box-shadow: 0 0 25px #00ffff;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>とりかみAIラボ</h1>
+            <p>未来を創るスキルを、仲間と共に。</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container detail-content">
+            <h2 id="plan-title">プラン詳細</h2>
+            <p id="plan-description">選択されたプランの詳細情報がここに表示されます。</p>
+            <a href="index.html" class="back-btn">トップページに戻る</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 とりかみAIラボ</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const plan = urlParams.get('plan');
+            const planTitle = document.getElementById('plan-title');
+            const planDescription = document.getElementById('plan-description');
+
+            if (plan === 'monthly') {
+                planTitle.textContent = '月額プランの詳細';
+                planDescription.textContent = '月額10,000円で、全ての講座へのアクセス、メンターへの質問し放題、コミュニティイベントへの参加が可能です。毎月自動更新されます。';
+            } else if (plan === 'annual') {
+                planTitle.textContent = '年間プランの詳細';
+                planDescription.textContent = '年間100,000円で、月額プランより2ヶ月分お得です。全ての講座へのアクセス、メンターへの質問し放題、コミュニティイベントへの参加が可能です。1年間の契約となります。';
+            } else {
+                planTitle.textContent = 'プランが選択されていません';
+                planDescription.textContent = 'トップページに戻り、ご希望のプランを選択してください。';
+            }
+        });
+    </script>
+</body>
+</html>
