@@ -26,6 +26,21 @@ header h1 {
     margin: 0;
 }
 
+/* ヒーロー画像 */
+.hero-image-container {
+    text-align: center;
+    padding: 20px 0;
+    background: #4a0072;
+}
+
+.hero-image {
+    width: 150px; /* 小さくリサイズ */
+    height: 150px; /* 小さくリサイズ */
+    border-radius: 50%; /* 丸いアイコン */
+    object-fit: cover;
+    border: 5px solid #9c27b0; /* 枠線を追加 */
+}
+
 /* メインコンテンツ */
 main {
     padding: 20px 0;
