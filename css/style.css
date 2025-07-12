@@ -4,7 +4,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #0a0a1a; /* ダークな背景 */
+    background: linear-gradient(135deg, #6a1b9a, #4a148c); /* 明るい紫を基調としたグラデーション */
+    background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Futuristic+Illustration'); /* 近未来的なイラストのプレースホルダー */
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay; /* グラデーションと画像を重ねる */
     color: #e0e0e0; /* 明るいテキスト */
 }
 
@@ -16,7 +20,7 @@ body {
 
 /* ヘッダー */
 header {
-    background: #1a0a2a; /* ダークな紫色 */
+    background: #3a0a4a; /* ダークな紫色 */
     color: #00ffff; /* シアン */
     padding: 1rem 0;
     text-align: center;
@@ -32,7 +36,7 @@ header h1 {
 .hero-image-container {
     text-align: center;
     padding: 20px 0;
-    background: #1a0a2a;
+    background: #3a0a4a;
     border-bottom: 2px solid #00ffff;
 }
 
@@ -52,24 +56,19 @@ main {
 
 section {
     padding: 40px 0;
-    background: #1a1a3a; /* セクションの背景 */
+    background: #4a148c; /* セクションの背景 */
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
 .hero {
-    background: linear-gradient(45deg, #1a0a2a, #3a0a4a); /* グラデーション */
+    background: linear-gradient(45deg, #3a0a4a, #6a1b9a); /* グラデーション */
     color: #fff;
     text-align: center;
     padding: 60px 0;
     border-radius: 0;
     box-shadow: none;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    text-shadow: 0 0 15px #00ffff;
 }
 
 .btn {
@@ -90,7 +89,7 @@ section {
 }
 
 .features, .courses, .testimonials, .faq {
-    background: #1a1a3a;
+    background: #4a148c;
 }
 
 .feature-list, .course-list, .testimonial-list, .pricing-list, .faq-list {
@@ -103,7 +102,7 @@ section {
     flex-basis: 30%;
     text-align: center;
     margin-bottom: 20px;
-    background: #2a2a4a; /* アイテムの背景 */
+    background: #5a189a; /* アイテムの背景 */
     padding: 25px;
     border-radius: 8px;
     border: 1px solid #00ffff;
@@ -117,7 +116,7 @@ section {
 }
 
 .course-item, .testimonial-item, .faq-item, .pricing-item {
-    background: #2a2a4a; /* アイテムの背景 */
+    background: #5a189a; /* アイテムの背景 */
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #00ffff;
@@ -125,12 +124,12 @@ section {
 }
 
 .pricing {
-    background: #1a1a3a;
+    background: #4a148c;
 }
 
 .pricing-item {
     flex-basis: 45%;
-    background: #2a2a4a;
+    background: #5a189a;
     text-align: center;
     border: 2px solid #00ffff;
     margin-bottom: 20px;
@@ -163,14 +162,14 @@ section {
 .testimonial-item, .faq-item {
     flex-basis: 100%;
     margin-bottom: 20px;
-    background: #2a2a4a;
+    background: #5a189a;
     border: 1px solid #00ffff;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 /* 運営者紹介 */
 .organizer {
-    background: #1a1a3a;
+    background: #4a148c;
     text-align: center;
 }
 
@@ -185,7 +184,7 @@ section {
 }
 
 .cta {
-    background: linear-gradient(45deg, #1a0a2a, #3a0a4a); /* グラデーション */
+    background: linear-gradient(45deg, #3a0a4a, #6a1b9a); /* グラデーション */
     color: #fff;
     text-align: center;
     padding: 50px 0;
@@ -195,7 +194,7 @@ section {
 
 /* フッター */
 footer {
-    background: #1a0a2a; /* ダークな紫色 */
+    background: #3a0a4a; /* ダークな紫色 */
     color: #00ffff; /* シアン */
     text-align: center;
     padding: 1rem 0;
